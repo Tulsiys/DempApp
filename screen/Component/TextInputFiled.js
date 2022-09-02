@@ -3,11 +3,11 @@ import React from 'react'
 import { useForm, Controller } from 'react-hook-form';
 
 export default function TextInputFiled(props) {
-	const { labelName, defaultValue, control, rules, error, name } = props;
+	const { labelName, defaultValue, control, rules, error, name,labelStyle } = props;
 
 	return (
 		<View>
-			<Text style={styles.label}>{labelName}</Text>
+			<Text style={[styles.label,labelStyle]}>{labelName}</Text>
 			<Controller
 				control={control}
 				name={name}
