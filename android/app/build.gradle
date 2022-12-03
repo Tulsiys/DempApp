@@ -1,4 +1,6 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services' // <- Add this line
+apply plugin: 'com.google.firebase.crashlytics'
 
 import com.android.build.OutputFile
 
@@ -134,7 +136,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.demoapp"
+        applicationId "com.firebasedemoapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -257,7 +259,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-
+    implementation project(path: ":@react-native-firebase_analytics")
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 

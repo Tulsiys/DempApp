@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, TextInput, Button, Alert } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button, Alert, SafeAreaView } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
 import TextInputFiled from '../Component/TextInputFiled';
 import { rules } from '../utils/Rules';
@@ -24,8 +24,8 @@ export default function SignIn() {
   }
 
   return (
-    <View style={styles.container}>
-
+    <SafeAreaView style={styles.container}>
+    <View style={{marginHorizontal:20}} >
       <View style={{alignItems:'center'}}>
         <Text style={{color:'white',fontWeight:'800',fontSize:32,marginBottom:'10%'}}>Sign_In</Text>
       </View>
@@ -65,6 +65,7 @@ export default function SignIn() {
         />
       </View>
     </View>
+    </SafeAreaView>
   );
 };
 
@@ -83,7 +84,6 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    justifyContent: 'center',
     paddingTop: 20,
     padding: 8,
     backgroundColor: '#0e101c',

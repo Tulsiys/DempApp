@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "98837050531",
+    "project_id": "dem0firebase",
+    "storage_bucket": "dem0firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98837050531:android:11212e1b05e4c8e907bb16",
+        "android_client_info": {
+          "package_name": "com.firebasedemoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98837050531-aio2mpgsmie2mijskok1hij7he7t8fu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebasedemoapp",
+            "certificate_hash": "6ebdb514e01f357e0f157d4ea479c29e453d8c61"
+          }
+        },
+        {
+          "client_id": "98837050531-nb58dcjuk5n6ca5v5f1pq3p484k20d49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-lS_n7gLLs0BKY4da2jnzY4-k-VBnOHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98837050531-nb58dcjuk5n6ca5v5f1pq3p484k20d49.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

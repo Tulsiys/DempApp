@@ -30,5 +30,15 @@ export const rules = {
             message: R.string.errors.email
         },
     },
+    password: {
+        required: {
+            value: true,
+            message: R.string.errors.password
+        },
+        pattern: {
+            value: R.Regex.forgotPassword,
+            message: R.string.errors.password1
+        },
+    },
 
 };
