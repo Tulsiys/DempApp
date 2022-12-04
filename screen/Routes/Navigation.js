@@ -3,8 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import DashBoard from '../Auth/DashBoard';
 import SignIn from '../Auth/SignIn';
-import ShowData from '../Auth/screens/showData';
 import Login from '../Auth/Login'
+import ShowData from '../Auth/screens/ShowData';
+import RemoteConfigDisplay from '../Auth/screens/RemoteConfigDisplay';
+import CrashApplicationTest from '../Auth/screens/CrashApplicationTest';
 
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
@@ -16,6 +18,8 @@ export default function Navigation() {
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="DashBoard" component={DashBoard} />
         <Stack.Screen name="ShowData" component={ShowData}/>
+        <Stack.Screen name="RemoteConfigDisplay" component={RemoteConfigDisplay}/>
+        <Stack.Screen name="CrashApplicationTest" component={CrashApplicationTest}/>
       </Stack.Navigator>
     </NavigationContainer>
   )

@@ -7,11 +7,12 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React, { useEffect } from "react";
-import TextInputFiled from "../Component/TextInputFiled";
+import TextInputFiled from "../Component/TextInputField";
 import { useForm, Controller } from "react-hook-form";
 import { rules } from "../utils/Rules";
 import { useNavigation } from "@react-navigation/native";
 import { HeartLogo } from "../assets/Images/SVG";
+import routes from "../navigation/routes/route";
 
 export default function Login() {
   const navigation = useNavigation();
@@ -94,12 +95,7 @@ export default function Login() {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() =>
-            onSignIn({
-              username: 'Mahadev',
-              email: 'Mahadev@#$86',
-            })
-          }
+          onPress={() =>navigation.navigate(routes.SignIn)}
         >
           <Text style={styles.loginButtonStyles}>Sign In</Text>
         </TouchableOpacity>
